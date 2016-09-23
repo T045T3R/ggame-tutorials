@@ -40,5 +40,10 @@ def reverseKey(event):
 # Handle the mouse click
 def mouseClick(event):
     ball.x = event.x
-    ball.y = event.y
+    ball.y = event.
+    
+myapp.listenKeyEvent('keydown', 'space', spaceKey)
+myapp.listenKeyEvent('keydown', 'r', reverseKey)
+myapp.listenMouseEvent('click', mouseClick)
+
 myapp.run(step)
