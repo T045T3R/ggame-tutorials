@@ -21,6 +21,7 @@ ball.scale = 0.1
 ball.dir = 1
 ball.go = True
 
+
 def reverse(b):
     b.dir *= -1
 def step():
