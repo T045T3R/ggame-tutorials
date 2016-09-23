@@ -21,5 +21,15 @@ ball.scale = 0.1
 ball.dir = 1
 ball.go = True
 
+def reverse(b):
+    b.dir *= -1
+    
+    def step():
+    if ball.go:
+        ball.x += ball.dir
+        if ball.x + ball.width > SCREEN_WIDTH or ball.x < 0:
+            ball.x -= ball.dir
+            reverse(ball)
+            
 myapp = App()
 myapp.run()
