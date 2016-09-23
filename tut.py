@@ -21,7 +21,6 @@ ball.scale = 0.1
 ball.dir = 1
 ball.go = True
 
-
 def reverse(b):
     b.dir *= -1
 def step():
@@ -42,4 +41,4 @@ def reverseKey(event):
 def mouseClick(event):
     ball.x = event.x
     ball.y = event.y
-myapp.run()
+myapp.run(step)
